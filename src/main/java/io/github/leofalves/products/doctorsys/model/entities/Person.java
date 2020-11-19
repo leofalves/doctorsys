@@ -1,6 +1,9 @@
 package io.github.leofalves.products.doctorsys.model.entities;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+
+import io.github.leofalves.products.doctorsys.model.entities.enums.DocumentType;
 
 public class Person implements Serializable{
 	
@@ -11,13 +14,17 @@ public class Person implements Serializable{
 	
 	private Integer id;
 	private String name;
+	private DocumentType documentType;
 	private Long documentNumber;
+	private LocalDate birth;
 
 
-	public Person(Integer id, String name, Long documentNumber) {
+	public Person(Integer id, String name, Long documentNumber, DocumentType documentType, LocalDate birth) {
 		this.id = id;
 		this.name = name;
+		this.documentType = documentType;
 		this.documentNumber = documentNumber;
+		this.birth = birth;
 	}
 	
 	public Person() {
@@ -69,4 +76,28 @@ public class Person implements Serializable{
 		return true;
 	}
 
+	public DocumentType getDocumentType() {
+		return documentType;
+	}
+
+	public void setDocumentType(DocumentType documentType) {
+		this.documentType = documentType;
+	}
+
+	public LocalDate getBirth() {
+		return birth;
+	}
+
+	public void setBirth(LocalDate birth) {
+		this.birth = birth;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + ", documentType=" + documentType + ", documentNumber="
+				+ documentNumber + ", birth=" + birth + "]";
+	}
+	
+	
+	
 }
