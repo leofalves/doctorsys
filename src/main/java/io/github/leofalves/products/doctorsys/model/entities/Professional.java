@@ -2,7 +2,6 @@ package io.github.leofalves.products.doctorsys.model.entities;
 
 import java.time.LocalDate;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -18,18 +17,13 @@ public class Professional extends Person{
 	private static final long serialVersionUID = 1L;
 	
 	
-	@Column(name = "class_document_type")
 	private String classDocumentType;
-	
-	@Column(name = "class_document_number")
 	private String classDocumentNumber;
 	
 	
 	public Professional() {
 		super();
 	}
-	
-	
 	
 	public Professional(Long id, String name, Long documentNumber, DocumentType documentType, LocalDate birth,
 			String classDocumentType, String classDocumentNumber) {
@@ -52,6 +46,5 @@ public class Professional extends Person{
 	public void setClassDocumentNumber(String classDocumentNumber) {
 		this.classDocumentNumber = classDocumentNumber;
 	}
-	
-	
+		
 }

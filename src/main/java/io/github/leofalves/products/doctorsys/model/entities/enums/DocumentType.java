@@ -2,11 +2,12 @@ package io.github.leofalves.products.doctorsys.model.entities.enums;
 
 public enum DocumentType {
 
-	RG(1), CPF(2);
+	RG(1), 
+	CPF(2);
 
 	private int code;
 
-	DocumentType(int code) {
+	private DocumentType(int code) {
 		this.code = code;
 	}
 

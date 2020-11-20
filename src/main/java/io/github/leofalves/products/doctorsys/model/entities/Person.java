@@ -2,14 +2,19 @@ package io.github.leofalves.products.doctorsys.model.entities;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-import javax.persistence.Column;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import io.github.leofalves.products.doctorsys.model.entities.enums.DocumentType;
@@ -26,26 +31,24 @@ public class Person implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id")
 	private Long id;
-	
-	@Column(name = "name")
 	private String name;
-	
-	@Column(name = "document_type_id")
-	private DocumentType documentType;
-	
-	@Column(name = "document_number")
+	private Integer documentType;
 	private Long documentNumber;
-	
-	@Column(name = "birth")
 	private LocalDate birth;
+	
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "address_id", referencedColumnName = "id")
+	private Address address;
+	
+	@OneToMany(mappedBy = "person")
+	private List<Phone> phones = new ArrayList<Phone>();
 
 
 	public Person(Long id, String name, Long documentNumber, DocumentType documentType, LocalDate birth) {
 		this.id = id;
 		this.name = name;
-		this.documentType = documentType;
+		setDocumentType(documentType);
 		this.documentNumber = documentNumber;
 		this.birth = birth;
 	}
@@ -99,11 +102,14 @@ public class Person implements Serializable{
 	}
 
 	public DocumentType getDocumentType() {
-		return documentType;
+		return DocumentType.valueOf(this.documentType);
 	}
 
 	public void setDocumentType(DocumentType documentType) {
-		this.documentType = documentType;
+		if(documentType != null) {
+			this.documentType = documentType.getCode();
+		}
+
 	}
 
 	public LocalDate getBirth() {
@@ -113,11 +119,24 @@ public class Person implements Serializable{
 	public void setBirth(LocalDate birth) {
 		this.birth = birth;
 	}
+		
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 
 	@Override
 	public String toString() {
 		return "Person [id=" + id + ", name=" + name + ", documentType=" + documentType + ", documentNumber="
 				+ documentNumber + ", birth=" + birth + "]";
+	}
+
+	public List<Phone> getPhones() {
+		return phones;
 	}
 	
 }
