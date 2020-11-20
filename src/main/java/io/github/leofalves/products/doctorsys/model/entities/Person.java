@@ -10,18 +10,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.github.leofalves.products.doctorsys.model.entities.enums.DocumentType;
 
 @Entity
 @Table(name = "person")
-@Inheritance(strategy = InheritanceType.JOINED)
 public class Person implements Serializable{
 	
 	/**
@@ -43,6 +42,14 @@ public class Person implements Serializable{
 	
 	@OneToMany(mappedBy = "person")
 	private List<Phone> phones = new ArrayList<Phone>();
+
+	@JsonIgnore
+	@OneToOne(mappedBy = "personProfessional")
+	private Professional professional;
+
+	@JsonIgnore
+	@OneToOne(mappedBy = "personPatient")
+	private Patient patient;
 
 
 	public Person(Long id, String name, Long documentNumber, DocumentType documentType, LocalDate birth) {
@@ -138,5 +145,5 @@ public class Person implements Serializable{
 	public List<Phone> getPhones() {
 		return phones;
 	}
-	
+		
 }
