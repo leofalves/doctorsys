@@ -30,35 +30,33 @@ public class DoctorSysApplication {
 			List<Person> persons = personRep.obterTodos();
 			persons.forEach(System.out::println);
 
-			System.out.println("Updating persons...");
-			persons.forEach(p -> {
-				p.setName(p.getName().concat(" - Atualizado"));
-				personRep.atualizar(p);
-			});
-			
-			System.out.println("Getting per name...");
-			personRep.obterPorNome("Leo").forEach(System.out::println);
-			
-			System.out.println("Getting all...");
-			persons = personRep.obterTodos();
-			persons.forEach(System.out::println);
-			
-			System.out.println("Deleting all...");
-			personRep.obterTodos().forEach(p -> {
-				personRep.deletar(p.getId());
-			});
-			
-			
-			System.out.println("Getting all...");
-			persons = personRep.obterTodos();
-			if (persons.isEmpty()) {
-				System.out.println("No person selected");
-			}else {
-				persons.forEach(System.out::println);	
-			}
-			
-			
-			
+//			System.out.println("Updating persons...");
+//			persons.forEach(p -> {
+//				p.setName(p.getName().concat(" - Atualizado"));
+//				personRep.atualizar(p);
+//			});
+//			
+//			System.out.println("Getting per name...");
+//			personRep.obterPorNome("Leo").forEach(System.out::println);
+//			
+//			System.out.println("Getting all...");
+//			persons = personRep.obterTodos();
+//			persons.forEach(System.out::println);
+//			
+//			System.out.println("Deleting all...");
+//			personRep.obterTodos().forEach(p -> {
+//				personRep.deletar(p.getId());
+//			});
+//			
+//			
+//			System.out.println("Getting all...");
+//			persons = personRep.obterTodos();
+//			if (persons.isEmpty()) {
+//				System.out.println("No person selected");
+//			}else {
+//				persons.forEach(System.out::println);	
+//			}
+//									
 		};
 	}
 	
