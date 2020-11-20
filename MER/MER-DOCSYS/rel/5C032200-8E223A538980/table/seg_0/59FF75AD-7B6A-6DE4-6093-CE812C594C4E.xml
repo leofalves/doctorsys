@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59FF75AD-7B6A-6DE4-6093-CE812C594C4E" name="SCHEDULE">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:24:00 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PATIENT_ID" id="F07DC0C9-542D-6E87-5F1F-44B770BE25DD">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:24:31 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F23E58A0-85AD-1ECE-103D-BD109EAFD12D" referredColumn="2C7B330B-D8DA-105F-73BE-34B901A0BFE6"/>
+</associations>
+</Column>
+<Column name="PROFESSIONAL_ID" id="AC144C4B-E1C2-52BA-C133-52FB66F4E10B">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:24:37 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BD21479-A35F-DAD5-2637-40E801C30A6F" referredColumn="ED9799F2-72B4-1340-1083-7DAD49F9D9FF"/>
+</associations>
+</Column>
+<Column name="SITE_ID" id="101E81C2-309F-0003-B1C9-AE06BFA7D2EC">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:33:10 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFFF0316-F1CF-3813-4120-A43FDF2C329F" referredColumn="E5F06982-6A77-BAE7-E10F-5B0C06224B2C"/>
+</associations>
+</Column>
+<Column name="SCHEDULE_DATE" id="01DA0CED-61EA-C174-67E1-53B5DF9059F2">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:24:59 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3489E091-8A0D-8953-4AA9-31F3177E1B5A" name="SCHEDULE_FK01">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:24:31 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F07DC0C9-542D-6E87-5F1F-44B770BE25DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24BF0E1D-A887-28A4-40E7-10ABD23B3C2A" name="SCHEDULE_FK02">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:24:37 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC144C4B-E1C2-52BA-C133-52FB66F4E10B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="125305DC-365F-6DDB-68E7-EAAC05F73A96" name="SCHEDULE_SITE_FK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:33:10 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="101E81C2-309F-0003-B1C9-AE06BFA7D2EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

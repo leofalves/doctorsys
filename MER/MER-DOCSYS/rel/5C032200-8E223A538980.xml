@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="5C032200-F246-02EB-93AE-8E223A538980" mainViewID="8FD7897B-EB81-D322-4D99-8B63492F82D2">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:07:44 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>79C73AAF-E1A7-E669-7DF0-025EE81A2AFC</selectedRDBMSSite>
+</relationalModel>

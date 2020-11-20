@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B5D7647C-CC88-58B7-1CA7-EF222822694E" containerWithKeyObject="6A7E3E60-CD37-1838-CAE4-DA755ABBFE05" localFKIndex="6EFE4155-8383-5C54-6881-893B37581FBA" name="PATIENT_FK02">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:14:30 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<referredTableLongName>HEALTH_PLAN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F96DF416-07A5-839E-76A5-98E84549A1BC</referredTableID>
+<keyObject>EDB5744D-D99D-C366-691C-7F2157C182AD</keyObject>
+<referredKeyID>EDB5744D-D99D-C366-691C-7F2157C182AD</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

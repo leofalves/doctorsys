@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE6EA0EE-A8C7-4AB6-4789-D7412D6AA156" name="PHONE_TYPE">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:53:42 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B26BD720-D850-3906-4556-CDCC7458C546">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:53:59 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="4664F1E0-0AC4-95EC-E016-919B17D3623A">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:54:19 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49447402-795C-E130-7AA8-F211F3D82798" name="PHONE_TYPE_PK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:53:59 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B26BD720-D850-3906-4556-CDCC7458C546"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CB823254-0E12-8354-0EA4-B109F1D43E67" containerWithKeyObject="78FFB8F4-3AF1-5C83-33B2-86480A2830CD" localFKIndex="2F2B5925-CAB2-1FE6-79A3-BD4070DE0D9F" name="PROFESSIONAL_SPECIALITY_FK01">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:21:59 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<referredTableLongName>PROFESSIONAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C5E6A3A-6563-4828-10FD-6A776EEB72C7</referredTableID>
+<keyObject>18ECF547-27EC-43C4-6087-CE8515E2610C</keyObject>
+<referredKeyID>18ECF547-27EC-43C4-6087-CE8515E2610C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PERSON_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

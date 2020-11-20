@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78FFB8F4-3AF1-5C83-33B2-86480A2830CD" name="PROFESSIONAL_SPECIALITY">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:21:12 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROFESSIONAL_PERSON_ID" id="AC59A9A7-2C3B-07E4-108B-5E43223A6A1F">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:21:59 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB823254-0E12-8354-0EA4-B109F1D43E67" referredColumn="ED9799F2-72B4-1340-1083-7DAD49F9D9FF"/>
+</associations>
+</Column>
+<Column name="SPECIALITY_ID" id="F1C5334B-7BE4-D44E-DE41-B570A1D2CE43">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:22:05 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4C1752A-C526-C9F7-C776-6DA10132B865" referredColumn="BE66B877-EA32-4FA0-E1DC-799E195C0FE2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F2B5925-CAB2-1FE6-79A3-BD4070DE0D9F" name="PROFESSIONAL_SPECIALITY_FK01">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:21:59 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC59A9A7-2C3B-07E4-108B-5E43223A6A1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BB3A853-5B1B-88B7-BB0A-E9BB3888DCE4" name="PROFESSIONAL_SPECIALITY_FK02">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:22:05 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1C5334B-7BE4-D44E-DE41-B570A1D2CE43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

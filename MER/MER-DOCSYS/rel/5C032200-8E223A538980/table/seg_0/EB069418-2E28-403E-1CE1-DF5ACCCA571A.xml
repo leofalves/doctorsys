@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB069418-2E28-403E-1CE1-DF5ACCCA571A" name="USER">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:26:32 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PERSON_ID" id="1F5C2760-1361-00F6-F2AB-491143530D8E">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:26:41 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31ABBA21-70B6-5655-7094-7093C6C06DEF" referredColumn="A611F258-FF9A-48E2-DF88-C5B4BB2A63E6"/>
+</associations>
+</Column>
+<Column name="LOGIN" id="FB6C54A6-B4B0-EB55-2879-71107A0F8B08">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:27:21 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD" id="85F70BA0-F4C0-013F-0281-3A61C2AE58AF">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:27:36 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B19A742B-BCB0-6D4E-D6D4-D2BF895F80D7" name="USER_PK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:28:23 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F5C2760-1361-00F6-F2AB-491143530D8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26EF76F7-F3AC-B790-2251-A844EFAF5CC7" name="USER_FK01">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:26:41 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F5C2760-1361-00F6-F2AB-491143530D8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F96DF416-07A5-839E-76A5-98E84549A1BC" name="HEALTH_PLAN">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:11:11 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3868AE59-86C6-88D1-D01F-FA8F565FD6C7">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:12:40 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="ABEB2E78-1577-FA76-5F73-8383EDFD1C73">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:13:13 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="8F7EA28E-53C1-FCAB-5420-4F6FC60E8347">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:13:13 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDB5744D-D99D-C366-691C-7F2157C182AD" name="HEALTH_PLAN_PK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:12:40 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3868AE59-86C6-88D1-D01F-FA8F565FD6C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

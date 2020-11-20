@@ -8,12 +8,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 import io.github.leofalves.products.doctorsys.model.entities.enums.DocumentType;
 
 @Entity
 @Table(name = "person")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Person implements Serializable{
 	
 	/**
@@ -24,7 +27,7 @@ public class Person implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
-	private Integer id;
+	private Long id;
 	
 	@Column(name = "name")
 	private String name;
@@ -39,7 +42,7 @@ public class Person implements Serializable{
 	private LocalDate birth;
 
 
-	public Person(Integer id, String name, Long documentNumber, DocumentType documentType, LocalDate birth) {
+	public Person(Long id, String name, Long documentNumber, DocumentType documentType, LocalDate birth) {
 		this.id = id;
 		this.name = name;
 		this.documentType = documentType;
@@ -51,11 +54,10 @@ public class Person implements Serializable{
 
 	}
 	
-	
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {

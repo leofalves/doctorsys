@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EE3356C6-68D9-74D2-1D45-3FB652D9B33C" name="SITE">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:30:52 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E5F06982-6A77-BAE7-E10F-5B0C06224B2C">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:31:08 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="D127F587-4C31-D474-1D3D-8A1247CDF60E">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:31:20 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="27311C68-27B2-C1D5-A879-6FB76AF2BE6A">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:31:40 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D05E7958-C408-5B4E-F987-BEFE512D1703" name="SITE_PK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:31:08 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5F06982-6A77-BAE7-E10F-5B0C06224B2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

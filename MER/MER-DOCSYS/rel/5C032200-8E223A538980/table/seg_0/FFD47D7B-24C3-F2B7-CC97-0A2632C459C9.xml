@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FFD47D7B-24C3-F2B7-CC97-0A2632C459C9" name="ADDRESS">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:58:51 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="AF31B72F-AAC3-DD4A-CDDC-93AADC728403">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:59:44 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSON_ID" id="81D7BA29-C199-023E-E22B-40B6CEAD4836">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:01:51 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="801C0A1F-86DF-3E0D-6EFF-9976017C9CDC" referredColumn="A611F258-FF9A-48E2-DF88-C5B4BB2A63E6"/>
+</associations>
+</Column>
+<Column name="ZIP_CODE" id="19157B79-BB3C-CC2E-8795-1E4F3DDBCD95">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:00:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LINE_ADDRESS_1" id="ECC03923-8C11-5AA5-022E-BAEB16C1234A">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:00:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LINE_ADDRESS_2" id="AE00B32E-C035-AC6A-5F2D-22D6F21C3ED0">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:00:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LINE_ADDRESS_3" id="79A2CFE5-C8A2-3732-57F7-2EC4A5BD2A92">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:00:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="CE2E14CB-82E6-CDF8-C267-629A0C8F86F1">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:00:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE" id="825A9DF2-868A-E373-EAC6-0588E2E886DD">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:00:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY" id="62334E8D-6C06-1659-6665-CA9D39CA2D07">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:00:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="176D27E5-8A5E-F9CB-A54F-B178DCDB63D2" name="ADDRESS_PK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:59:44 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF31B72F-AAC3-DD4A-CDDC-93AADC728403"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0382AC5-1F79-D20D-6A04-4AA1F73C8474" name="ADDRESS_FK01">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 22:01:51 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81D7BA29-C199-023E-E22B-40B6CEAD4836"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F116AEAC-A8F2-4DE4-69E9-870B8CC633D3" name="PERSON">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:07:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A611F258-FF9A-48E2-DF88-C5B4BB2A63E6">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:08:28 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="23EF1584-C629-7BEB-AC8C-1DAFD59F77A7">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:08:54 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTH" id="B53C4517-41BE-8099-AEC9-4963A9000BC1">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:08:54 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOCUMENT_NUMBER" id="A28AA74B-E729-7A9C-2268-1A5AC67F1DC5">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:10:04 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOCUMENT_TYPE_ID" id="A9385D2F-662D-2B0B-09BF-366263564F90">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:56:15 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30A1391D-6D60-4119-A869-96C9E0F41D6E" referredColumn="A489A13E-3363-5C8D-9C60-6219391728A8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03D15636-D1B3-BF7B-6F8A-2803865A9AB7" name="PERSON_PK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:08:28 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A611F258-FF9A-48E2-DF88-C5B4BB2A63E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="463653F5-0CED-56AD-FC94-D61035C3AF6A" name="PERSON_FK01">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:56:15 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9385D2F-662D-2B0B-09BF-366263564F90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

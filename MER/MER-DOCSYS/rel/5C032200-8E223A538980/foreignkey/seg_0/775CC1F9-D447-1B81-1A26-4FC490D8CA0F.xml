@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="775CC1F9-D447-1B81-1A26-4FC490D8CA0F" containerWithKeyObject="2808F1C9-8A02-5B76-9682-B0A8E16FA4D5" localFKIndex="765D5306-D780-E2D9-2E9E-EE7695344DCB" name="PHONE_FK02">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:54:34 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<referredTableLongName>PHONE_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AE6EA0EE-A8C7-4AB6-4789-D7412D6AA156</referredTableID>
+<keyObject>49447402-795C-E130-7AA8-F211F3D82798</keyObject>
+<referredKeyID>49447402-795C-E130-7AA8-F211F3D82798</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

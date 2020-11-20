@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="70699DF3-2B8E-020E-B2FE-D81DF985A836" mainViewID="A68C4AEF-9DD7-03AD-E957-326FA3C57939">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:07:44 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

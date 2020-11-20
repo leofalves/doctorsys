@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2808F1C9-8A02-5B76-9682-B0A8E16FA4D5" name="PHONE">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:51:34 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="BA56CC29-953D-F664-6DE8-79A67E2D4639">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:52:41 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSON_ID" id="7641F530-CF55-3382-9486-FE22493ACEF0">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:57:21 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="930D56E4-4385-A64C-9D3C-29350535FE27" referredColumn="A611F258-FF9A-48E2-DF88-C5B4BB2A63E6"/>
+</associations>
+</Column>
+<Column name="DDI" id="C7921CE4-5324-ED80-9B28-BADD86360C7D">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:53:04 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DDD" id="6DCD08AD-7163-26A2-D211-68D3B12AC036">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:53:15 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="9283E4DE-D6C0-CD74-35EA-169AEE025B83">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:52:52 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_TYPE_ID" id="9B95D530-9DFE-13ED-F86B-19C40500FD3D">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:54:34 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="775CC1F9-D447-1B81-1A26-4FC490D8CA0F" referredColumn="B26BD720-D850-3906-4556-CDCC7458C546"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6B0081C-05F9-9075-9B1D-D53F6C60BCEF" name="PHONE_PK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:52:41 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA56CC29-953D-F664-6DE8-79A67E2D4639"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="765D5306-D780-E2D9-2E9E-EE7695344DCB" name="PHONE_FK02">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:54:34 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B95D530-9DFE-13ED-F86B-19C40500FD3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC2C53FA-1A17-4AC0-81C6-C8116A69724B" name="PHONE_FK01">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 21:57:21 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7641F530-CF55-3382-9486-FE22493ACEF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

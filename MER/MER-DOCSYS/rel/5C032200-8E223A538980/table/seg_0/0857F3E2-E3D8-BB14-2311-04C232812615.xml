@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0857F3E2-E3D8-BB14-2311-04C232812615" name="SPECIALITY">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:19:08 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="BE66B877-EA32-4FA0-E1DC-799E195C0FE2">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:19:58 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="CEA06E0F-A9BF-40CD-8FE5-2429B777B938">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:20:18 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="6DE271DA-52A0-C2FA-8E17-2DA7223D18B0">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:32:34 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A832D1D8-8851-0E83-8F41-A723FF7A1EC1" name="SPECIALITY_PK">
+<createdBy>mtzcpd1842</createdBy>
+<createdTime>2020-11-14 03:20:35 UTC</createdTime>
+<ownerDesignName>MER-DOCSYS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE66B877-EA32-4FA0-E1DC-799E195C0FE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
